@@ -1,5 +1,5 @@
-const episodiosRick = async (pagina) => {
-    let url = "https://rickandmortyapi.com/api/episode?page="+ pagina;
+const LocationsRick = async (pagina) => {
+    let url = "https://rickandmortyapi.com/api/location?page=2"+ pagina;
     const api = await fetch(url);
 
     const data = await api.json();
@@ -16,10 +16,10 @@ const episodiosRick = async (pagina) => {
         <div class="card-body">
             <h5 class="card-title"> ${item.name}</h5>
             <p class="card-text">
-                <b>Estatus: </b>${item.episode}
+                <b>Estatus: </b>${item.type}
             </p>
             <p class="card-text">
-                <b>Especie: </b>${item.air_date}
+                <b>Especie: </b>${item.dimension}
             </p>
         </div>
         </div>
@@ -29,4 +29,4 @@ const episodiosRick = async (pagina) => {
     })
 } 
 
-episodiosRick();
+LocationsRick();
