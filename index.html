@@ -10,9 +10,9 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom ">
         <div class="container-fluid">
-            <h1 class="navbar-brand">Rick and Morty API</h1>
+            <h1 class=" clase">Rick and Morty API</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,25 +29,27 @@
               </li>
             </ul>
             <form class="d-flex" id ="search-form">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="busqueda">
+              <input class="buscador me-2" type="search" placeholder="Search" aria-label="Search" id="busqueda">
               <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
             </form>
           </div>
         </div>
       </nav>
-
-      <h4 style="justify-content: flex-start  ;">Pagina
-
-          <select name="pagina" id="pagina" onchange="apiRick(this.value)">
-            <script>
-                for(let i = 1; i<=42; i++){
-                    document.write(`<option value="${i}">${i}</option>`)
-                }
-                </script>
-    </select>
-    </h4>
-    <div id="resultado">
-        
+    
+      <div id="content">
+      <p id="parrafo">Pagina
+        <select name="pagina" id="pagina" onchange="apiRick(this.value)">
+          <script>
+              for(let i = 1; i<=42; i++){
+                  document.write(`<option value="${i}">${i}</option>`)
+              }
+              </script>
+          </select>
+        </p>
+      
+        <div id="resultado">
+            
+        </div>
     </div>
     
     <script src="./JS/per.js"></script>
