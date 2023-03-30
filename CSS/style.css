@@ -11,31 +11,24 @@ body{
     background: #39af21
 }
 
-#content {
-    background: #39af21; /* Cambia el color de fondo al contenedor adicional */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     /* Ajusta la altura para excluir la altura de la barra de navegación */
-}
 
+/*__________________________________________________________________________________________________________________________CSS tarjetas */
+.colorFondo{
+  background: rgb(230,230,230);
+  background: linear-gradient(0deg, rgba(230,230,230,1) 15%, rgba(224,224,224,1) 79%);
+}
 #resultado {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 30px 10px;
-    padding: 150px;
-    padding-top: 40px;
-    background-color: white;
+    padding: 130px;
+    padding-top: 20px;
+
     /* Agregue otros estilos según sea necesario */
 }
 
-#parrafo{
-    padding-top: 20px;
-    padding-bottom: 0px;
-    margin-bottom: 0.0rem;
-    text-align: center;
-}
+
 
 @media (max-width: 768px){
     #resultado{
@@ -49,7 +42,17 @@ body{
     }
 }
 
+/*__________________________________________________________________________________________________________________________CSS paginas de resultados*/
 
+#AjustePaginaN{
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0.0rem;
+  text-align: center;
+}
+
+
+/*__________________________________________________________________________________________________________________________CSS de navbar */
 .navbar-custom {
     height: 90px;
     font-size: 20px;
@@ -89,3 +92,85 @@ body{
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
+
+
+/*__________________________________________________________________________________________________________________________CSS carrusel */
+
+
+.d-item{
+  height: 500px;
+}
+
+.d-img{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+
+/*__________________________________________________________________________________________________________________________CSS Footer */
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  text-align: left;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+

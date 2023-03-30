@@ -10,45 +10,78 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom ">
         <div class="container-fluid">
-            <h1 class="navbar-brand">Rick and Morty API</h1>
+            <h1 class=" clase">Rick and Morty API</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Personajes</a>
+                <a class="nav-link " aria-current="page" href="index.html">Personajes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="epi.html">Episodios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="loc.html">Locaciones</a>
-              </li>              
+              </li>
             </ul>
             <form class="d-flex" id ="search-form">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="busqueda">
+              <input class="buscador me-2" type="search" placeholder="Search" aria-label="Search" id="busqueda">
               <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
             </form>
           </div>
         </div>
       </nav>
-
-<!--       <h4>Pagina
-
-          <select name="pagina" id="pagina" onchange="LocationsRick(this.value)">
-            <script>
-                for(let i = 1; i<=3; i++){
-                    document.write(`<option value="${i}">${i}</option>`)
+    
+      <div class="colorFondo">
+          <h4 id="AjustePaginaN">
+            <select name="pagina" id="pagina" onchange="LocationsRick(this.value)">
+              <script>
+                for (let i = 1; i <= 7; i++) {
+                  document.write(`<option value="${i}">${i}</option>`);
                 }
-                </script>
-    </select>
-    </h4> -->
-    <div id="resultado">
+              </script>
+            </select>
+            <p style="padding-top: 20px;">El numero total de planetas son: <span id="totalPlanetas"></span> </p>
+          </h4>
         
-    </div>
+        <div id="resultado">
+            
+        </div>
+      </div>
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>Acerca</h6>
+                <p class="text-justify">Api de Rick y Morty</p>
+                <p class="text-justify">DICIS</p>
+                <p class="text-justify">Aplicaciones de internet</p>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <h6>Links</h6>
+                <ul class="footer-links">
+                  <li><a href="index.html">Personajes</a></li>
+                  <li><a href="epi.html">Episodios</a></li>
+                  <li><a href="loc.html">Locaciones</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Arath Morales  
+                </ul>
+              </div>
+            </div>
+          </div>
+    </footer>
+
     
     <script src="./JS/loc.js"></script>
 </body>
