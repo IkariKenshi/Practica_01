@@ -95,7 +95,8 @@ body{
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
-#imagen{
+.imagen{
+  color: white;
   height: 30px;
 }
 
