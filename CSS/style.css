@@ -56,6 +56,8 @@ body{
 .navbar-custom {
     height: 90px;
     font-size: 20px;
+    position: fixed;
+    top: 0;
   }
 
  /* Titulo rick y morty */ 
@@ -95,6 +97,10 @@ body{
 
 #imagen{
   height: 30px;
+}
+
+a:hover {
+  transform: scale(1.2);
 }
 
 /*__________________________________________________________________________________________________________________________CSS carrusel */
@@ -175,5 +181,6 @@ body{
     text-align:center
   }
 }
+
 
 
